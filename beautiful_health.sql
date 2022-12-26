@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 26, 2022 lúc 05:23 PM
--- Phiên bản máy phục vụ: 10.4.27-MariaDB
--- Phiên bản PHP: 8.1.12
+-- Host: 127.0.0.1
+-- Generation Time: Dec 26, 2022 at 05:30 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,97 +18,98 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `beautiful_health`
+-- Database: `beautiful_health`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tbl_chi_tiet_don_hang`
+-- Table structure for table `tbl_khach_hang`
 --
 
-CREATE TABLE `tbl_chi_tiet_don_hang` (
-  `id_don_hang` int(11) NOT NULL,
-  `id_san_pham` int(11) NOT NULL,
-  `so_luong` int(11) NOT NULL,
-  `don_gia` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_chi_tiet_don_hang`
---
-
-INSERT INTO `tbl_chi_tiet_don_hang` (`id_don_hang`, `id_san_pham`, `so_luong`, `don_gia`) VALUES
-(1, 1, 2, 100),
-(1, 2, 1, 100),
-(2, 4, 1, 200),
-(3, 2, 2, 100),
-(3, 3, 1, 200),
-(4, 5, 1, 100),
-(5, 6, 1, 150),
-(6, 2, 3, 100),
-(6, 7, 2, 50),
-(7, 2, 3, 100),
-(7, 7, 3, 50),
-(8, 7, 3, 50);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `tbl_don_hang`
---
-
-CREATE TABLE `tbl_don_hang` (
-  `id_don_hang` int(11) NOT NULL,
+CREATE TABLE `tbl_khach_hang` (
   `id_khach_hang` int(11) NOT NULL,
-  `ngay_ban` date NOT NULL,
-  `giam_gia` int(11) DEFAULT NULL,
-  `tong_tien` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `ten_khach_hang` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `sđt` varchar(50) NOT NULL,
+  `dia_chi` text NOT NULL,
+  `so_luong` int(11) NOT NULL,
+  `tong_tien` int(11) NOT NULL,
+  `trang_thai` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `tbl_don_hang`
+-- Dumping data for table `tbl_khach_hang`
 --
 
-INSERT INTO `tbl_don_hang` (`id_don_hang`, `id_khach_hang`, `ngay_ban`, `giam_gia`, `tong_tien`) VALUES
-(1, 1, '2022-12-07', NULL, 200),
-(2, 1, '2022-12-04', NULL, 200),
-(3, 3, '2022-11-16', NULL, 400),
-(4, 4, '2022-12-17', NULL, 100),
-(5, 2, '2022-12-03', NULL, 150),
-(6, 5, '2022-12-10', NULL, 400),
-(7, 2, '2022-12-03', NULL, 450),
-(8, 6, '2022-12-09', NULL, 150),
-(9, 6, '2022-12-04', NULL, 250),
-(10, 7, '2022-12-01', NULL, 450),
-(11, 8, '2022-12-04', NULL, 500),
-(12, 9, '2022-11-19', NULL, 600);
+INSERT INTO `tbl_khach_hang` (`id_khach_hang`, `ten_khach_hang`, `email`, `sđt`, `dia_chi`, `so_luong`, `tong_tien`, `trang_thai`) VALUES
+(1, 'Nguyễn Thị Hoa', 'hoa123@gmail.com', '0385401073', 'Đống Đa Hà Nội', 48, 90000, 3),
+(2, 'Nguyễn Thị Hằng', 'hang123@gmail.com', '0384062956', 'Nguyễn Xiển Hà Nội', 6, 26000, 96),
+(3, 'Phùng Thị Thu Hiền', 'thuhien123@gmail.com', '0375835582', 'Phùng khoang Hà Nội', 79, 45000, 8),
+(4, 'Nguyễn Thị Dương', 'duong123@gmail.com', '0645284756', 'Nhổm Hà Nội', 59, 39000, 8),
+(5, 'Nguyễn Văn Lộc', 'loc123@gmail.com', '0475637835', 'Quảng Ninh', 80, 38000, 39),
+(6, 'Nguyễn Thị Hiệp', 'hiep123@gmail.com', '0364736763', 'Hải Dương', 48, 987000, 50),
+(7, 'Nguyễn Như Bảo', 'bao123@gmail.com', '03648368254', 'Nghệ An', 73, 39000, 75),
+(8, 'Trần Nhật Huy', 'nhathuy123@gmail.com', '0364826946', 'Ninh Bình', 46, 736000, 38),
+(9, 'Đoàn Lê Nam', 'Nam123@gmail.com', '0365738947', 'Sapa', 57, 364000, 67);
+
+-- --------------------------------------------------------
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Table structure for table `tbl_nguoi_dung`
+--
+
+CREATE TABLE `tbl_nguoi_dung` (
+  `id_nguoi_dung` int(11) NOT NULL,
+  `ten_nguoi_dung` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `dien_thoai` varchar(50) NOT NULL,
+  `mat_khau` varchar(50) NOT NULL,
+  `chuc_vu` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_nguoi_dung`
+--
+
+INSERT INTO `tbl_nguoi_dung` (`id_nguoi_dung`, `ten_nguoi_dung`, `email`, `dien_thoai`, `mat_khau`, `chuc_vu`) VALUES
+(1, 'Bùi Thùy Chi', 'thuychi123@gmail.com', '0384503087', '123456', 'QTV'),
+(2, 'Đặng Thị Thảo', 'thao123@gmail.com', '0383406097', '123456', 'QTV'),
+(3, 'Nguyễn Thị Mai Linh', 'mailinh123@gmail.com', '0186402075', '123456', 'QTV'),
+(4, 'Nguyễn Thị Trang', 'trang123@gmail.com', '0395401974', '123456', 'QTV'),
+(5, 'Cao Tuấn Long', 'tuanlong123@gmail.com', '0274406082', '123456', 'QTV');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `tbl_chi_tiet_don_hang`
+-- Indexes for table `tbl_khach_hang`
 --
-ALTER TABLE `tbl_chi_tiet_don_hang`
-  ADD PRIMARY KEY (`id_don_hang`,`id_san_pham`);
+ALTER TABLE `tbl_khach_hang`
+  ADD PRIMARY KEY (`id_khach_hang`);
 
 --
--- Chỉ mục cho bảng `tbl_don_hang`
+-- Indexes for table `tbl_nguoi_dung`
 --
-ALTER TABLE `tbl_don_hang`
-  ADD PRIMARY KEY (`id_don_hang`);
+ALTER TABLE `tbl_nguoi_dung`
+  ADD PRIMARY KEY (`id_nguoi_dung`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `tbl_don_hang`
+-- AUTO_INCREMENT for table `tbl_khach_hang`
 --
-ALTER TABLE `tbl_don_hang`
-  MODIFY `id_don_hang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `tbl_khach_hang`
+  MODIFY `id_khach_hang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `tbl_nguoi_dung`
+--
+ALTER TABLE `tbl_nguoi_dung`
+  MODIFY `id_nguoi_dung` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
