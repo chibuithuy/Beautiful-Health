@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2023 at 06:00 PM
+-- Generation Time: Jan 02, 2023 at 10:49 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -127,9 +127,9 @@ CREATE TABLE `tbl_loai_sp` (
 --
 
 INSERT INTO `tbl_loai_sp` (`lsp_id`, `lsp_ten`, `lsp_so_luong`) VALUES
-(1, 'hạt sấy', 100),
+(1, 'Hạt sấy', 240),
 (2, 'Mỳ rau củ', 200),
-(3, 'Trà', 60),
+(3, 'Trà', 90),
 (4, 'Granola', 400);
 
 -- --------------------------------------------------------
@@ -154,19 +154,19 @@ CREATE TABLE `tbl_san_pham` (
 --
 
 INSERT INTO `tbl_san_pham` (`sp_id`, `sp_ten`, `sp_so_luong`, `sp_don_vi`, `sp_gia_tien`, `lsp_id`, `sp_mo_ta`, `sp_anh`) VALUES
-(1, 'Hạt macca sấy', 1, 'Hộp', 300000, 1, 'abc', 'sp1.png'),
-(2, 'Hạt óc chó sấy', 50, 'hộp', 280000, 1, 'ngon', 'sp2.png'),
-(8, 'Mỳ Chũ Rau Củ 4 Vị Wise Food 1Kg Ăn Kiêng Eat Clean Không Phẩm Màu, Không Chất Bảo Quản, Phụ Gia', 100, 'túi', 80000, 0, 'Mỳ được tráng và phơi theo phương pháp thủ công truyền thống, không làm công nghiệp. \r\nChỉ cần ninh một chút sườn và với 1 vắt mì, cả nhà có bữa sáng ngon lành, đầy đủ dinh dưỡng. Ngoài ra nhúng lẩu, xào...cũng rất ngon.\r\nThành phần: gạo, gấc, nghệ, đậu biếc, củ dền\r\n\r\n- Nguyên liệu Organic, không phẩm màu, không chất bảo quản và phụ gia\r\nThông tin dinh dưỡng/100Gr: Calories: 109\r\n\r\n', 'mi4.png'),
-(9, 'Mỳ Chũ Rau Củ 6 Vị Wise Food 1Kg Ăn Kiêng Eat Clean Không Phẩm Màu, Không Chất Bảo Quản, Phụ Gia', 100, 'kg', 90000, 0, 'Mỳ được tráng và phơi theo phương pháp thủ công truyền thống, không làm công nghiệp. \r\nhỉ cần ninh một chút sườn và với 1 vắt mì, cả nhà có bữa sáng ngon lành, đầy đủ dinh dưỡng. Ngoài ra nhúng lẩu, xào...cũng rất ngon.\r\nhành phần: gồm: gạo, gấc, mè, nghệ, đậu biếc, khoai lang tím, củ dền đỏ, trắng, chùm ngây\r\n\r\n- Nguyên liệu Organic, không phẩm màu, không chất bảo quản và phụ gia.\r\nThông tin dinh dưỡng/100Gr: Calories: 109', 'mi6.png'),
-(10, 'Hạt Hạnh Nhân Sấy Mộc 500g ', 20, 'gam', 200000, 1, 'Nguyên liệu 100% từ thiên nhiên\r\nHạt luôn được đóng gói trong hộp pet có nắp giật tiện lợi, bảo quản hạt ở điều kiện tốt nhất, giữ cho hạt thơm ngon\r\nSản phẩm cung cấp đầy đủ dinh dưỡng có lợi cho sức khỏe, mọi đối tượng đều có thể sử dụng. Đặc biệt là người ăn kiêng, ăn thô, mẹ bầu, gymer.\r\nSản phẩm hạnh nhân sấy mộc Wise Food 100% từ thiên nhiên, không sử dụng chất bảo quản, gia vị.\r\n- Hạnh nhân đã tách vỏ và sấy mộc, có thể ăn trực tiếp\r\n- Hạn sử dụng: 6 tháng kể từ ngày sản xuất\r\n- Hỗ trợ đổ', 'hat3.png'),
-(11, 'Hạt điều sấy mộc 500g', 20, 'gam', 150000, 1, 'Hạt Điều sữa sấy mộc Wise Food chất lượng cao, hạt Điều Bình Phước Việt Nam 500g\r\nHạn sử dụng: 6 tháng kể từ ngày sản xuất\r\nHỗ trợ đổi trả hàng trong vòng 7 ngày nếu có lỗi từ nhà sản xuất.', 'hat8.png'),
-(12, 'Trà Gạo Lứt Hoa Cúc', 20, 'gam', 180000, 0, 'Bạn có uống đủ 2L nước mỗi ngày? Trà gạo lứt của chúng tôi sẽ giúp bạn điều đó.\r\nHSD: 24 tháng kể từ NSX\r\n- Thành phần: Gạo lứt rang, hoa cúc, đậu đen xanh lòng, đậu đỏ, cỏ ngọt, hoa nhài\r\n- Nguyên liệu Organic, không chất bảo quản và phụ gia\r\n- Sản phẩm đạt chứng chỉ ISO 22000:2018', 'tra6.png'),
-(13, 'Trà Gạo Lứt ', 20, 'gam', 150000, 0, 'HSD: 24 tháng kể từ NSX\r\n- Thành phần: Gạo lứt rang, đậu đen xanh lòng, đậu đỏ, cỏ ngọt, hoa nhài\r\n- Nguyên liệu Organic, không chất bảo quản và phụ gia\r\n- Sản phẩm đạt chứng chỉ ISO 22000:2018', 'tra4.png'),
-(14, 'Trà Hoa Cúc', 20, 'gam', 150000, 0, 'HSD: 24 tháng kể từ NSX\r\n- Thành phần: Gạo hoa cúc, đậu đen xanh lòng, đậu đỏ, cỏ ngọt, hoa nhài\r\n- Nguyên liệu Organic, không chất bảo quản và phụ gia\r\n- Sản phẩm đạt chứng chỉ ISO 22000:2018', 'tra1.png'),
-(15, 'Granola siêu hạt 500gram', 100, 'gam', 180000, 0, 'Ngũ cốc dinh dưỡng dành cho người muốn: giảm cân, điều chỉnh chế độ ăn và vóc dáng, mẹ bầu trong và sau sinh, trẻ nhỏ.\r\n Mọi lứa tuổi đều có thể thêm Granola Siêu Hạt của WiseFood vào bữa ăn hàng ngày.\r\nChỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'sieuhat.png'),
-(16, 'Granola Vị Matcha 500g', 100, 'gam', 180000, 0, 'Ngũ cốc dinh dưỡng dành cho người muốn: giảm cân, điều chỉnh chế độ ăn và vóc dáng, mẹ bầu trong và sau sinh, trẻ nhỏ.', 'mcha2.png'),
-(17, 'Granola Vị Chocolate 500g', 100, 'gam', 180000, 0, 'Ngũ cốc dinh dưỡng dành cho người muốn: giảm cân, điều chỉnh chế độ ăn và vóc dáng, mẹ bầu trong và sau sinh, trẻ nhỏ.', 'cho3.png'),
-(18, 'Granola Vị Vani 500g', 100, 'gam', 150000, 0, 'Chỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'vani2.png');
+(1, 'Hạt macca sấy', 60, 'Hộp', 300000, 1, 'Sản phẩm cung cấp đầy đủ dinh dưỡng có lợi cho sức khỏe, mọi đối tượng đều có thể sử dụng. Đặc biệt là người ăn kiêng, ăn thô, mẹ bầu, gymer.', 'sp1.png'),
+(2, 'Hạt óc chó sấy', 60, 'Hộp', 250000, 1, 'Quả óc chó giàu protein, chất béo có lợi như axit béo omega 3, chất xơ cùng nhiều chất dinh dưỡng và khoáng chất khác mang lại vô số lợi ích cho sức khỏe.', 'sp2.png'),
+(3, 'Hạt Hạnh Nhân Sấy Mộc  ', 60, 'Hộp', 300000, 1, 'Sản phẩm cung cấp đầy đủ dinh dưỡng có lợi cho sức khỏe, mọi đối tượng đều có thể sử dụng. Đặc biệt là người ăn kiêng, ăn thô, mẹ bầu, gymer.', 'hat3.png'),
+(4, 'Hạt điều sấy mộ', 60, 'Hộp', 300000, 1, 'Sản phẩm cung cấp đầy đủ dinh dưỡng có lợi cho sức khỏe, mọi đối tượng đều có thể sử dụng. Đặc biệt là người ăn kiêng, ăn thô, mẹ bầu, gymer.', 'hat8.png'),
+(5, 'Mỳ Chũ Rau Củ 4 Vị ', 100, 'Túi', 80000, 2, 'Chỉ cần ninh một chút sườn và với 1 vắt mì, cả nhà có bữa sáng ngon lành, đầy đủ dinh dưỡng.', 'mi4.png'),
+(6, 'Mỳ Chũ Rau Củ 6 Vị', 100, 'Túi', 100000, 2, 'Chỉ cần ninh một chút sườn và với 1 vắt mì, cả nhà có bữa sáng ngon lành, đầy đủ dinh dưỡng.', 'mi6.png'),
+(7, 'Trà Hoa Cúc', 30, 'Hộp', 60000, 3, 'Bạn có uống đủ 2L nước mỗi ngày? Trà hoa cúc của chúng tôi sẽ giúp bạn điều đó', 'tra1.png'),
+(8, 'Trà Gạo Lứt ', 30, 'Hộp', 60000, 3, 'Bạn có uống đủ 2L nước mỗi ngày? Trà gạo lứt của chúng tôi sẽ giúp bạn điều đó', 'tra4.png'),
+(9, 'Trà Gạo Lứt Hoa Cúc', 30, 'Hộp', 70000, 3, 'Bạn có uống đủ 2L nước mỗi ngày? Trà hoa cúc gạo lứt  của chúng tôi sẽ giúp bạn điều đó', 'tra6.png'),
+(10, 'Granola siêu hạt 500gram', 100, 'Hộp', 200000, 4, 'Chỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'sieuhat.png'),
+(11, 'Granola Vị Vani 500g', 100, 'Hộp', 180000, 4, 'Chỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'vani2.png'),
+(12, 'Granola Vị Matcha 500g', 100, 'Hộp', 230000, 4, 'Chỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'mcha2.png'),
+(13, 'Granola Vị Chocolate 500g', 100, 'Hộp', 230000, 4, 'Chỉ với 1 phút bạn đã có bữa ăn sáng thông minh, dinh dưỡng.', 'cho3.png');
 
 -- --------------------------------------------------------
 
