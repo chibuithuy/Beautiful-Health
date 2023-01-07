@@ -1,0 +1,15 @@
+giam-gia-box{
+    position: relative;
+}
+.giam-gia{
+    color: #ed4f2d;
+    position: absolute;
+    top:0px;
+    right:5px;
+    background-color: #fdd83a;
+    border-radius: 5px;
+    padding:2px;
+}
+.giam-gia-title{
+    color:#fff;
+}
