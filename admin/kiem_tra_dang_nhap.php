@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Middle Side Travel | Đăng nhập thực hiện</title>
+	<title> Beautiful Health | Đăng nhập thực hiện</title>
 </head>
 <body>
 	<?php

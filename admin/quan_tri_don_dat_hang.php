@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mega Able bootstrap admin template by codedthemes </title>
+    <title>Beautiful Health </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -26,7 +26,7 @@
       <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
       <meta name="author" content="codedthemes" />
       <!-- Favicon icon -->
-      <link rel="icon" type="image/png" href="./img/star.png">
+      <link rel="icon" type="image/png" href="./img/logo1.png">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <!-- waves.css -->
@@ -123,7 +123,7 @@
                           </div>
                       </div>
                       <a href="index.php">
-                          <img class="img-fluid" src="./img/star.png" alt="Theme-Logo" />
+                          <img class="img-fluid" src="./img/logo2.png" alt="Theme-Logo" />
                       </a>
                       <a class="mobile-options waves-effect waves-light">
                           <i class="ti-more"></i>
@@ -160,7 +160,7 @@
                       <ul class="nav-right">
                           <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
-                              <img class="img-fluid" src="../img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <span><?php echo "Xin chào ";Echo $row1['admin_ten_dang_nhap'];?> </span>
                                   <i class="ti-angle-down"></i>
                               </a>
@@ -194,7 +194,7 @@
                       <div class="pcoded-inner-navbar main-menu">
                           <div class="">
                               <div class="main-menu-header">
-                              <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <div class="user-details">
                                       <span id="more-details"><?php echo "Xin chào "; echo $row1['admin_ten_dang_nhap'];?><i class="fa fa-caret-down"></i></span>
                                   </div>
@@ -319,6 +319,7 @@
       <td style="width: 90px; text-align: center; font-weight: bold;">Trạng thái</td>
       <td style="width: 90px; text-align: center; font-weight: bold;">Loại sản phẩm</td>
       <td style="width: 90px; text-align: center; font-weight: bold;">Sản phẩm</td>
+      <td style="width: 90px; text-align: center; font-weight: bold;">Số lượng</td>
       <td style="width: 150px; text-align: center; font-weight: bold;">Ghi chú</td>
       <td style="width: 50px; text-align: center; font-weight: bold;">In hóa đơn</td>
     </tr>
@@ -328,11 +329,8 @@
                       mysqli_set_charset($ketnoi, 'UTF8');
 
                       //Bước 2: Hiển thị các dữ liệu trong bảng tblLienHe ra đây
-                      $sql = "
-                        SELECT tbl_dat_hang.* , tbl_khach_hang.kh_ho_ten, tbl_loai_sp.lsp_ten,tbl_san_pham.sp_ten,tbl_dat_hang.dh_ghi_chu FROM tbl_dat_hang join tbl_loai_sp on tbl_dat_hang.lsp_id=tbl_loai_sp.lsp_id join tbl_khach_hang on tbl_dat_hang.kh_id=tbl_khach_hang.kh_id join tbl_san_pham on tbl_dat_hang.sp_id=tbl_san_pham.sp_id ORDER BY dh_id DESC ";
-
-                       
-                        
+                      $sql = "SELECT tbl_dat_hang.*, tbl_khach_hang.kh_ho_ten, tbl_loai_sp.lsp_ten,tbl_san_pham.sp_ten, tbl_chi_tiet_dat_hang.so_sp_moi_loai,tbl_dat_hang.dh_ghi_chu FROM tbl_chi_tiet_dat_hang join tbl_loai_sp on tbl_chi_tiet_dat_hang.lsp_id=tbl_loai_sp.lsp_id join tbl_khach_hang on tbl_chi_tiet_dat_hang.kh_id=tbl_khach_hang.kh_id join tbl_san_pham on tbl_chi_tiet_dat_hang.sp_id=tbl_san_pham.sp_id join tbl_dat_hang on tbl_chi_tiet_dat_hang.dh_id=tbl_dat_hang.dh_id ORDER BY dh_id DESC ";
+  
                       $dat_hang = mysqli_query($ketnoi, $sql);
     $i=0;
     while($row=mysqli_fetch_array($dat_hang)){
@@ -345,6 +343,7 @@
         <td style="text-align: center;"><?php echo $row['dh_trang_thai'];?></td>
         <td style="text-align: center;"><?php echo $row['lsp_ten'];?></td>
         <td style="text-align: center;"><?php echo $row['sp_ten'];?></td>
+        <td style="text-align: center;"><?php echo $row['so_sp_moi_loai'];?></td>
         <td style="text-align: center;"><?php echo $row['dh_ghi_chu'];?></td>
         <td style="text-align: center;"><a href="dat_hang_in_hoa_don.php?dh_id=<?php echo $row['dh_id'];?>"><img style="width: 15px;height: auto;" src="./img/printing.png"></a></td>
       </tr>
@@ -413,7 +412,7 @@
     <!-- partial:partials/_footer.html -->
           <footer style="width: 1330px;margin-right: 280px;position: fixed;" class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm sinh viên K23HTTT</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm 6 LTW</span>
             </div>
           </footer>
     <!-- Required Jquery -->

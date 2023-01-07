@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mega Able bootstrap admin template by codedthemes </title>
+    <title>Beautiful Health </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -26,7 +26,7 @@
       <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
       <meta name="author" content="codedthemes" />
       <!-- Favicon icon -->
-      <link rel="icon" type="image/png" href="./img/star.png">
+      <link rel="icon" type="image/png" href="./img/logo1.png">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <!-- waves.css -->
@@ -146,7 +146,7 @@
                           </div>
                       </div>
                       <a href="index.php">
-                          <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                          <img class="img-fluid" src="img/logo2.png" alt="Theme-Logo" />
                       </a>
                       <a class="mobile-options waves-effect waves-light">
                           <i class="ti-more"></i>
@@ -176,7 +176,7 @@
                       <ul class="nav-right">
                           <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
-                              <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <span><?php echo "Xin chào ";Echo $row1['admin_ten_dang_nhap'];?> </span>
                                   <i class="ti-angle-down"></i>
                               </a>
@@ -210,7 +210,7 @@
                       <div class="pcoded-inner-navbar main-menu">
                           <div class="">
                               <div class="main-menu-header">
-                              <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <div class="user-details">
                                       <span id="more-details"><?php echo "Xin chào "; echo $row1['admin_ten_dang_nhap'];?><i class="fa fa-caret-down"></i></span>
                                   </div>
@@ -343,15 +343,15 @@
 													  <!--     enctype="multipart/form-data" dùng để gửi file từ form này sang form khác     -->
 													  <form action="san_pham_sua_thuc_hien.php" method="POST" enctype="multipart/form-data"> 
 													    <p style="text-align:center;font-weight: bold;" >Tên Sản Phẩm</p>
-													    <p style="text-align:center;"><input type="text" name="txtTenSanPham" value="<?php echo $row['sp_ten'];?>" placeholder="Tên sản phẩm" style=" width: 80%;" ></p>  
+													    <p style="text-align:center;"><input type="text" name="txtTenSanPham" value="<?php echo $row['sp_ten'];?>" placeholder="Tên sản phẩm" style=" width: 80%;" ></p>
 													    <p style="text-align:center;font-weight: bold;" >Mô tả</p>
-                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_mo_ta'];?> name="txtMoTa" style=" width: 80%;  "placeholder="Giá tiền sản phẩm"> </textarea></p>  
+                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_mo_ta'];?> name="txtMoTa" style=" width: 80%;  "placeholder="mô tả"></p>
 													    <p style="text-align:center;font-weight: bold;" >Số lượng</p>
-                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_so_luong'];?> name="txtSoLuong" style=" width: 80%;  "placeholder="Giá tiền sản phẩm"> </textarea></p>  
+                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_so_luong'];?> name="txtSoLuong" style=" width: 80%;  "placeholder="Số lượng"></p>  
                                                         <p style="text-align:center;font-weight: bold;" >Đơn vị</p>
-                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_don_vi'];?> name="txtDonVi" style=" width: 80%;  "placeholder="Giá tiền sản phẩm"> </textarea></p>  
+                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_don_vi'];?> name="txtDonVi" style=" width: 80%;  "placeholder="Đơn vị"> </p>  
                                                         <p style="text-align:center;font-weight: bold;" >Giá tiền</p>
-                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_gia_tien'];?> name="txtGiaTien" style=" width: 80%;  "placeholder="Giá tiền sản phẩm"> </textarea></p>  
+                                                        <p style="text-align:center"><input type="text" value=<?php echo $row['sp_gia_tien'];?> name="txtGiaTien" style=" width: 80%;  "placeholder="Giá tiền"> </p>  
                                                         <p style="text-align:center;font-weight: bold;" >Ảnh</p>
                                                         <p style="text-align:center;"><input type="file" name="txtAnhMinhHoa" value="<?php echo $row['sp_anh'];?>" style=" width: 80%;" ></p>  
 													    <p style="text-align: center;"><input type="hidden" name="txtID" value="<?php echo $row['sp_id'];?>"><button type="submit">Cập Nhật</button></p>
@@ -422,7 +422,7 @@
     <!-- partial:partials/_footer.html -->
           <footer style="width: 1312px;margin-left: 225px;position: relative;" class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm sinh viên K23HTTT</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm 6 LTW</span>
             </div>
           </footer>
     <!-- Required Jquery -->

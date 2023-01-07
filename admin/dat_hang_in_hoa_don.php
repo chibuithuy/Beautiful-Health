@@ -27,7 +27,7 @@ and open the template in the editor.
             include("../config/dbconfig.php");
           $ketnoi = mysqli_connect($host, $dbusername, $dbpassword, $dbname);
           mysqli_set_charset($ketnoi, 'UTF8');
-          $sql="SELECT tbl_dat_hang.*,tbl_loai_sp.*, tbl_san_pham.*, tbl_khach_hang.*,tbl_chi_tiet_dat_hang.so_sp_moi_loai FROM tbl_dat_hang join tbl_loai_sp on tbl_dat_hang.lsp_id=tbl_loai_sp.lsp_id join tbl_san_pham on tbl_dat_hang.sp_id=tbl_san_pham.sp_id join tbl_khach_hang on tbl_dat_hang.kh_id=tbl_khach_hang.kh_id join tbl_chi_tiet_dat_hang on tbl_dat_hang.dh_id=tbl_chi_tiet_dat_hang.dh_id WHERE tbl_dat_hang.dh_id =  " . $_GET['dh_id'];
+          $sql="SELECT tbl_dat_hang.*,tbl_loai_sp.*, tbl_san_pham.*, tbl_khach_hang.*,tbl_chi_tiet_dat_hang.so_sp_moi_loai FROM tbl_chi_tiet_dat_hang join tbl_loai_sp on tbl_chi_tiet_dat_hang.lsp_id=tbl_loai_sp.lsp_id join tbl_san_pham on tbl_chi_tiet_dat_hang.sp_id=tbl_san_pham.sp_id join tbl_khach_hang on tbl_chi_tiet_dat_hang.kh_id=tbl_khach_hang.kh_id join tbl_dat_hang on tbl_chi_tiet_dat_hang.dh_id=tbl_dat_hang.dh_id WHERE tbl_chi_tiet_dat_hang.dh_id =  " . $_GET['dh_id'];
 
           
 

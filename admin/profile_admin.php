@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mega Able bootstrap admin template by codedthemes </title>
+    <title>Beautiful Health </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -26,7 +26,7 @@
       <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
       <meta name="author" content="codedthemes" />
       <!-- Favicon icon -->
-      <link rel="icon" type="image/png" href="./img/star.png">
+      <link rel="icon" type="image/png" href="./img/logo1.png">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <!-- waves.css -->
@@ -189,7 +189,7 @@
                           </div>
                       </div>
                       <a href="index.php">
-                          <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                          <img class="img-fluid" src="img/logo2.png" alt="Theme-Logo" />
                       </a>
                       <a class="mobile-options waves-effect waves-light">
                           <i class="ti-more"></i>
@@ -219,7 +219,7 @@
                       <ul class="nav-right">
                           <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
-                              <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <span><?php echo "Xin chào ";Echo $row['admin_ten_dang_nhap'];?> </span>
                                   <i class="ti-angle-down"></i>
                               </a>
@@ -253,7 +253,7 @@
                       <div class="pcoded-inner-navbar main-menu">
                           <div class="">
                               <div class="main-menu-header">
-                              <img class="img-fluid" src="img/star.png" alt="Theme-Logo" />
+                              <img class="img-fluid" src="img/logo1.png" alt="Theme-Logo" />
                                   <div class="user-details">
                                       <span id="more-details"><?php echo "Xin chào "; echo $row['admin_ten_dang_nhap'];?><i class="fa fa-caret-down"></i></span>
                                   </div>
@@ -379,7 +379,7 @@
 														<form action="profile_admin_sua_thuc_hien.php" method="POST" enctype="multipart/form-data">
 															<div class="Profile">
 																<div class="AnhProfile">
-                                                                <img style="width:200px;height:200px;" class="img-fluid" src="img/bien.jpg" alt="Theme-Logo" />
+                                                                <img style="width:200px;height:200px;" class="img-fluid" src="img/avt.jpg" alt="Theme-Logo" />
 
 																</div>
 																<div class="Thongtinkhach">
@@ -485,7 +485,7 @@
     <!-- partial:partials/_footer.html -->
           <footer style="width: 1312px;margin-left: 225px;position: relative;" class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm sinh viên K23HTTT</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Website được xây dựng bởi nhóm 6 LTW</span>
             </div>
           </footer>
     <!-- Required Jquery -->
