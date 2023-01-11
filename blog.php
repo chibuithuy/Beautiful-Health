@@ -15,25 +15,25 @@
     <title>Beautiful Health | Trang chủ</title>
     
     <!-- Font awesome -->
-    <link href="../assets/css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="css/bootstrap.css" rel="stylesheet">   
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
-    <link href="../assets/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
     <!-- Product view slider -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.simpleLens.css">    
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
     <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <!-- price picker slider -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
     <!-- Theme color -->
-    <link id="switcher" href="../assets/css/theme-color/dark-red-theme.css" rel="stylesheet">
+    <link id="switcher" href="css/theme-color/dark-red-theme.css" rel="stylesheet">
     <!-- <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet"> -->
     <!-- Top Slider CSS -->
-    <link href="../assets/css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
 
     <!-- Main style sheet -->
-    <link href="../assets/css/style.css" rel="stylesheet">    
+    <link href="css/style.css" rel="stylesheet">    
 
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -58,104 +58,9 @@
     
   <body  data-spy="scroll" data-target="#main-menu">
  
- <header id="aa-header">
-    <!-- start header top  -->
-    <div class="aa-header-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="aa-header-top-area">
-              <!-- start header top left -->
-              <div class="aa-header-top-left">
-                <!-- / cellphone -->
-              </div>
-              <!-- / header top left -->
-              <div class="aa-header-top-right">
-                <ul class="aa-head-top-nav-right">
-                  <li class="hidden-xs"><a href="yeu_thich.php">Danh sách yêu thích</a></li>
-                  <li class="hidden-xs"><a href="gio_hang.php">Giỏ hàng</a></li>
-                  <li class="hidden-xs"><a href="thanh_toan.php">Thanh toán</a></li>
-                  <li class="hidden-xs"><a href="dang_nhap.php">Đăng nhập</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- start header bottom  -->
-    <div class="aa-header-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="aa-header-bottom-area">
-              <!-- logo  -->
-              <div class="aa-logo">
-                <a href="index.php "><img src="/img/logogreen.png" alt="logo.img"></a> 
-              </div>
-              <!-- / logo  -->
-              <!-- search box -->            
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- / header bottom  -->
+    
   </header>
-  <!-- / header section -->
-  <!-- menu -->
-  <section id="menu">
-    <div class="container">
-      <div class="menu-area">
-        <!-- Navbar -->
-        <div class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>          
-          </div>
-          <div class="navbar-collapse collapse">
-            <!-- Left nav -->
-            <ul class="nav navbar-nav">
-              <li><a href="index.php">Trang chủ</a></li>
-              <li><a href="ao.php">Áo<span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="ao_thun.php">Áo thun</a></li>
-                  <li><a href="croptop.php">Croptop</a></li>
-                  <li><a href="polo.php">Polo</a></li>
-                  <li><a href="tanktop.php">Tanktop</a></li>                                                
-                  <li><a href="sweater.php">Sweater</a></li>
-                  <li><a href="hoodie.php">Hoodie</a></li>
-                  <li><a href="so_mi.php">Sơ mi</a></li>
-                  <li><a href="ao_khoac.php">Áo khoác</a></li>
-                </ul>
-              </li>
-              <li><a href="quan.php">Quần<span class="caret"></span></a>
-                <ul class="dropdown-menu">  
-                  <li><a href="quan_shorts.php">Quần shorts</a></li>                                                                
-                  <li><a href="quan_dai.php">Quần dài</a></li>              
-                  <li><a href="quan_ngang_goi.php">Quần shorts ngang gối</a></li>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="set_do.php">Set đồ</a>
-              </li>
-              <li><a href="chan_vay.php">Chân váy<span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="chan_vay_dai.php">Chân váy dài</a></li>
-                  <li><a href="chan_vay_ngan.php">Chân váy ngắn</a></li>               
-                </ul>
-              </li>
-              <li><a href="vay.php">Váy</a></li>            
-              <li><a href="yem.php">Yếm</a></li>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>       
-    </div>
-  </section>
+  
       
    <!--Start Navigation-->
     <header id="header">
@@ -249,8 +154,7 @@
                     </div>
               <!-- Post Image -->
               <div class="post-img" text-align:center>
-                <img src='./img/".$row["tt_anh"]."'>;
-              
+                <img src="img/<?php echo $row['tt_anh']; ?>" alt="">;
                 
               </div>
               
@@ -294,9 +198,10 @@
                   ;?>
                   <div class="media">
 
-                          <div class="media-left">    
-                              <img height="150px" class="media-object news-img" src="img/<?php echo $row['tt_anh']; ?>" alt="" >      
+                          <div class="media-left">     
+                              <img height="150px" width="150px" class="media-object news-img" src="img/<?php echo $row['tt_anh'] ?>" alt="">
                           </div>
+                          <br>
                           <div class="media-body">
                            <h4><b><?php echo $row['tt_tieu_de'];?></b></h4>
                            <span class="comments-date"></span>
